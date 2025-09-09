@@ -336,7 +336,11 @@ It is group of k8s servers/nodes.
 
 what is node?
 =============
+A Node is a machine in a Kubernetes cluster.
 
+Master Node → controls the cluster
+
+Worker Node → runs the workloads (Pods/containers)
 
 How to list all k8s resources?
 ==============================
