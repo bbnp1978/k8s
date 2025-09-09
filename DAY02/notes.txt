@@ -8,7 +8,8 @@ Kubernetes cluster
 
    2. kubeadm [multi node k8s cluster]
 
---> If any failure in the pod, It will taken care by k8s. If any failure in the nodes, k8s will not handle manually. we need to fix it
+--> If any failure in the pod, It will taken care by k8s. If any failure in the nodes, k8s will not handle manually.
+we need to fix it
 
 
 2. cloud managed k8s cluster
@@ -21,7 +22,8 @@ Kubernetes cluster
 3. Google --> GKE [Google k8s engine]
 
 
---> If any failure in the pod, It will taken care by k8s. If any failure in the nodes, cloud will  handle manually. we need to fix it
+--> If any failure in the pod, It will taken care by k8s. If any failure in the nodes, cloud will  handle manually.
+we need to fix it
 
 
 1 master
@@ -111,7 +113,8 @@ apt-get install ca-certificates curl gnupg lsb-release -y
 
 
 
-Note: We are not installing Docker Here.Since containerd.io package is part of docker apt repositories hence we added docker repository & it's key to download and install containerd.
+Note: We are not installing Docker Here.Since containerd.io package is part of docker apt repositories hence we added docker repository
+& it's key to download and install containerd.
 
 
 # Add Docker’s official GPG key:
@@ -230,7 +233,9 @@ kubectl get nodes
 
 kubectl get pods -o wide -n kube-system
 
-#You will notice from the previous command, that all the pods are running except one: ‘core-dns’. For resolving this we will install a # pod network addon like Calico or Weavenet ..etc. 
+#You will notice from the previous command, that all the pods are running except one: ‘core-dns’. For resolving this we will install
+a # pod network addon like Calico or Weavenet ..etc. 
+
 
 
 Note: Install any one network addon don't install both. Install either weave net or calico.
